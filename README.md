@@ -32,4 +32,29 @@ Example from auth-passwd.c:
 
 So you only need to open the files and search for the word: "Leon" to see the changes.
 
+
+
+How to Compile:
+
+#Install necessary Packets for building SSH
+apt install build-essential zlib1g-dev libssl-dev libsystemd-dev pkg-config libpam0g-dev
+
+#Configure
+./configure --with-systemd --with-pam --prefix=/usr --sysconfdir=/etc/ssh
+
+#Compile
+make
+
+#Install
+make install
+
+#Restart sshd
+systemctl restart ssh
+
+
+
+Or simply run my install.sh Skript
+
+
+
 Sorry for Bad English I am German.

@@ -23,12 +23,12 @@ The files i editet are:
 I have commented on all changes that have been made following this
 Example from auth-passwd.c:
 
-/*Added by Leon*/
+/\*Added by Leon\*/
         if (strcmp(encrypted_password, pw_password) != 0) {
                 logit("SSHGuard: failed login attempt on User: '%.100s' Password: '%.100s'", authctxt->user, password);
                 sleep(10);
         }
-/*End*/
+/\*End\*/
 
 
 So you only need to open the files and search for the word: "Leon" to see the changes.

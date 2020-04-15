@@ -1,4 +1,4 @@
-<b>OpenSSH Mod<\b>
+<b>OpenSSH Mod
 
 This Mod/Hack of the Linux SSH Server allows you to see wrong passwords and ONLY wrong passwords in the log fiels.
 When a password is typed in incorrectly then a litte timer is set to avoid brute force Attacks. When you dont want it remove the Sleep Command from: "auth-passwd.c" and from "auth-pam.c".

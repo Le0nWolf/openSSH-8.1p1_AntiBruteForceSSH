@@ -18,7 +18,6 @@ The files i editet are:
 - auth-passwd.c
 - auth-pam.c
 - configure.ac
-- configure
 - sshd.c
 
 I have commented on all changes that have been made following this
@@ -40,6 +39,8 @@ How to Compile:
 
 #Install necessary Packets for building SSH
 apt install build-essential zlib1g-dev libssl-dev libsystemd-dev pkg-config libpam0g-dev
+
+autoreconf
 
 #Configure
 ./configure --with-systemd --with-pam --prefix=/usr --sysconfdir=/etc/ssh

@@ -16,6 +16,7 @@ apt --yes install build-essential zlib1g-dev libssl-dev libsystemd-dev pkg-confi
 #Configure
 cd  openssh-8.1p1
 echo wird Configuriert
+autoreconf -is
 sleep 1
 ./configure --with-systemd --with-pam --prefix=/usr --sysconfdir=/etc/ssh
 echo Configurieren abgeschlossen Compilieren wird gestartet
